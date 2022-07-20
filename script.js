@@ -3,7 +3,7 @@
 const NORMAL_MODE = "normal";
 const RAINBOW_MODE = "rainbow";
 const ERASER_MODE = "eraser";
-const ERASER_COLOR = "#ffffff";
+const THE_ERASER = "#ffffff";
 
 let mouseDown = false;
 let currentMode = NORMAL_MODE;
@@ -63,7 +63,7 @@ function changeColor(e) {
     (mouseDown == true && currentMode == ERASER_MODE) ||
     (e.type == "mousedown" && currentMode == ERASER_MODE)
   ) {
-    e.target.style.backgroundColor = ERASER_COLOR;
+    e.target.style.backgroundColor = THE_ERASER;
   }
 }
 
